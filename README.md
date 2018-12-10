@@ -21,8 +21,3 @@ Realiza configuracoes basicas de diretorios e usuario no servidor, necessarias p
 ### A role **Run**
 Executa os containers Mysql e Wordpress de forma integrada, completando desta forma o Deploy.
 Esta role tambem configura os containers para inicializarem durante a execucao do sistema atraves do systemd
-
-# Notas adicionais:
-Alterar  o usuario do playbook nos seguintes locais:
-* playbook.yml 
-* roles/config/tasks
