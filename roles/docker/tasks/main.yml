@@ -1,0 +1,23 @@
+---
+- name: Baixando a chave de assinatura digital do projeto Docker e adicionando ao repositorio
+  apt_key:
+    url: https://download.docker.com/linux/ubuntu/gpg
+    id: 0EBFCD88
+    state: present
+
+- name: Adicionando repositorio do docker
+  apt_repository: 
+    repo: deb [arch=amd64] https://download.docker.com/linux/ubuntu xenial stable 
+    state: present
+
+- name: Atualizando repositorios
+  apt: 
+    update_cache=yes 
+    cache_valid_time=3600
+
+- name: Instalando o Docker
+  apt:
+    name: docker-ce
+- name: Instala o plugin docker para python
+  pip:
+    name: docker

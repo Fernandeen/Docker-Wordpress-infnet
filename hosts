@@ -1,0 +1,4 @@
+[alvos]
+127.0.0.1 ansible_connection=local
+[AWS]
+100.24.200.139 ansible_ssh_private_key_file=/home/fernando/infnet.pem

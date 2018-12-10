@@ -1,0 +1,16 @@
+---
+- name: Cria o diretorio base onde o MySql sera salvo
+  file:
+    path: /database
+    state: directory
+    owner: root
+    group: root
+    mode: 0755
+
+- name: Adiciona o ususario vagrant para o grupo Docker
+  user:
+    name: "ubuntu"
+    groups: docker
+    append: yes
+
+# tasks file for configs

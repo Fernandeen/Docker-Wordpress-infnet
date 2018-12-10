@@ -1,0 +1,9 @@
+- hosts: alvos
+  remote_user: "ubuntu"
+  become: yes
+  roles:
+  - server
+  - docker
+  - configs
+  - run
+
