@@ -7,7 +7,7 @@
     group: root
     mode: 0755
 
-- name: Adiciona o ususario vagrant para o grupo Docker
+- name: Adiciona o ususario ubuntu para o grupo Docker
   user:
     name: "ubuntu"
     groups: docker
